@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="pl" xml:lang="pl">
+<head>
+	<title>Uaktualnienie listy zgłoszeń - OŚRODEK MEDYTACJI CHRZEŚCIJAŃSKIEJ W LUBINIU</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+form {
+	padding-top: 30px;
+	padding-left: 20px;i
+	color: #000000;
+	font-family: Verdana;
+}
+h1 {
+	font-size: 18px;
+}
+a {
+	text-decoration: underline;
+	color: #000000;
+	font-size: 15px;
+	font-color: blue;
+}
+li {
+	padding: 5px 0px;
+}
+
+</style>
+</head>
+<body>
+	<form method="get" action="/submit_app/">
+		<p>Czas ostatniego odświeżenia strony: {% now "j F Y H:i:s" %}</p>    
+		<h1>Dodanych zgłoszeń: {{ countTmpPD }}</h1>
+		<p><a href="/admin/users/userapplication/">&lt; wróć do listy zgłoszeń</a></p>
+<br/><br/>
+	{% if countTmpPD > 0 %}
+		<ul>
+			{% for pdt in PostDataTempAll %}
+				<li>{{ pdt }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+	</form>
+</body>
+</html>

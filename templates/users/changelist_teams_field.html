@@ -1,0 +1,10 @@
+{% load i18n admin_static %}
+{% if teams %}
+<ul>
+{% for team in teams %}
+<li><a href="{{team.url}}">{{team.name}}</a></li>
+{% endfor %}
+</ul>
+{% else %}
+&nbsp;
+{% endif %}

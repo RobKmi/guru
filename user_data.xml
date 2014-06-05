@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Formularz>
+  <Imie>imie</Imie>
+  <Nazwisko>nazwisko</Nazwisko>
+  <EMail>nazwisko</EMail>
+  <Telefon>nazwisko</Telefon>
+  <Miasto>miasto</Miasto>
+  <Wiek>11</Wiek>
+  <Przyjazd>04.10.2012</Przyjazd>
+  <PrzyjazdGodzina>11</PrzyjazdGodzina>
+  <Odjazd>04.10.2012</Odjazd>
+  <OdjazdGodzina>11</OdjazdGodzina>
+  <CzyPierwszyRaz>tak<CzyPierwszyRaz>
+  <Oswiadczenie>tak<Oswiadczenie>
+</Formularz>

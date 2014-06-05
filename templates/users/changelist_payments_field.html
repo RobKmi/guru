@@ -1,0 +1,22 @@
+{% load i18n admin_static %}
+
+<table border="0">
+    <tr>
+        <td>
+        {% if ads %}
+        <ul>
+        {% for ad in ads %}
+        <li><a href="{{ad.url}}">{{ad.name}}</a></li>
+        {% endfor %}
+        </ul>
+        {% else %}
+        &nbsp;
+        {% endif %}
+        </td>
+        <td width="32px">
+            <a id="add_id_ad" class="add-another" onclick="return showAddAnotherPopup(this);" href="/admin/admin/users/userpayment/add/?_popup=1">
+                    <img width="10" height="10" alt="{% trans 'Add Another' %}" src="{% static "admin/img/icon_addlink.gif" %}">
+            </a>
+        </td>
+    </tr>
+</table>

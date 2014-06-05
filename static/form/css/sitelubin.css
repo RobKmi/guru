@@ -1,0 +1,94 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+
+@font-face
+{
+    font-family: GillSans;
+    src: url('http://lubinmedytacje.cwanysoft.pl/GillSansMT.ttf');
+}
+
+div.ui-datepicker{
+ font-size:12px;
+}
+
+body
+{
+    background-color: #000000;
+    font-size: 16px;
+    font-family: Tahoma, Sans-Serif, Arial;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+hr
+{
+    border: 1px solid black;
+}
+
+.menuitem
+{
+    color: White;
+}
+
+h1
+{
+    color: #000000;
+}
+
+.page
+{
+    background-color: #E5E5E5;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pageMain
+{
+    background-image: url('/Images/tlo.jpg');
+    background-position: top | left;
+    background-repeat: no-repeat;
+    min-height: 650px;
+}
+
+.footer
+{
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    color: White;
+    font-size: 10px;
+}
+
+#main
+{
+    padding: 10px 50px 20px 140px;
+}
+
+div.inline
+{
+    float: left;
+}
+
+.clearBoth
+{
+    clear: both;
+}
+
+#logindisplay
+{
+    height: 43px;
+    float: right;
+    padding-top: 10px;
+}
